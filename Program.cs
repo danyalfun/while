@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,12 +42,22 @@ namespace ConsoleApp8
         }
         static void Task3()
         {
-
+            int sam = 0;
+            int num = 0;
+            int cunt = 0;
+            while (num != -1)
+            {
+                cunt++;
+                Console.WriteLine("enter num -1 to stop");
+                num= int.Parse(Console.ReadLine());
+                sam = sam + num;
+            }
+            Console.WriteLine("the of the" + cunt +  "avreg is : " + (sam / cunt));
         }
         static void Main(string[] args)
         {
             //Task1();
-            Task2();
+            //Task2();
             Task3();
         }
     }
